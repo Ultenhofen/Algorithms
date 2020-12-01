@@ -25,24 +25,3 @@ def QS(list,l,r,k):
         return QS(list,index+1,r,k-index+l-1) # if index is below k, check right subarray
 
     return "Hmmmmmmmmmm"
-
-def quick_select(k,list):
-    n = len(list)
-    return QS(list,0,n-1,k)
-
-# Main
-# generate random integer values
-from random import seed
-from random import randint
-from datetime import datetime
-from timeit import default_timer as timer
-
-# seed random number generator
-d = datetime.now()
-seed(d)
-list = []
-# generate some integers
-for i in range(10000):
-	arr.append(randint(0, 50000))
-print("K-th smallest element is ", end = "")
-print(quick_select(200,list))
